@@ -1,22 +1,15 @@
 @import "./variables";
 @import "./functions";
 @import "./mixins";
+@import "./header";
+@import "./home.scss";
+@import "./aboutUs.scss";
 
-h1, h2 {
-  font-weight: normal;
-}
-
-
-a {
-  color: $primary;
-}
-
-body{
-  background: $secondary;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: shade($primary, 70%);
-  margin-top: 60px;
+.yellow-btn{
+    background: linear-gradient(90deg, #F6EB61 0%, #FFB25B 100%);
+    box-shadow: 0px 4px 8px rgba(44, 38, 20, 0.1);
+    border-radius: 6px;
+    padding: 16px 32px;
+    outline: none;
+    border:0;
 }

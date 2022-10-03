@@ -1,22 +1,23 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <Header />
+    <router-view/>   
   </div>
 </template>
 
 <script>
+import Header from './layout/Header.vue'
 
 export default {
   name: 'App',
-  metaInfo () {
-    return {
-      title: this.$route.name
-    }
-  },
+
   data () {
     return {
-
     }
+  },
+
+  components: {
+    Header, 
   }
 }
 </script>

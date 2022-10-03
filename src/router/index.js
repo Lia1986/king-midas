@@ -1,8 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import VueMeta from 'vue-meta'
-import Main from 'page/Main'
-import Page1 from 'page/Page1'
+import AboutUs from '../pages/AboutUs'
+import Home from '../pages/Home'
+import EmailAutomation from '../pages/EmailAutomation'
+import MarketingAutomation from '../pages/MarketingAutomation'
+import CRM from '../pages/CRM'
+import Careers from '../pages/Careers'
+import Blog from '../pages/Blog'
 
 Vue.use(Router)
 Vue.use(VueMeta)
@@ -10,19 +15,39 @@ Vue.use(VueMeta)
 export default new Router({
   routes: [
     {
+      path: '/about',
+      name: 'AboutUs',
+      component: AboutUs
+    },
+    {
       path: '/',
-      name: 'Main',
-      component: Main
+      name: 'Home',
+      component: Home
     },
     {
-      path: '/page1/:name',
-      name: 'Page1-id',
-      component: Page1
+      path: '/emailauto',
+      name: 'EmailAutomation',
+      component: EmailAutomation
     },
     {
-      path: '/page1',
-      name: 'Page1',
-      component: Page1
+      path: '/marketing',
+      name: 'MarketingAutomation',
+      component: MarketingAutomation
+    },
+     {
+      path: '/crm',
+      name: 'CRM',
+      component: CRM
+    },
+    {
+      path: '/careers',
+      name: 'Careers',
+      component: Careers
+    },
+    {
+      path: '/blog',
+      name: 'Blog',
+      component: Blog
     }
   ]
 })

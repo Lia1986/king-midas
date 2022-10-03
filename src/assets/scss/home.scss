@@ -1,0 +1,193 @@
+.brands{
+    padding: 120px 190px;
+    justify-content: center;
+    padding-bottom: 120px;
+    background-color: #F5F5F5;
+    h3{
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    color: #101820;
+    margin-bottom: 60px;
+    margin-top: 0px;
+    img{
+        width: 29.57px;
+    }
+    }
+    .list{
+        border-bottom: 1px solid rgba(21, 22, 24, 0.2);
+        div{
+            div{ border-right: 1px solid rgba(21, 22, 24, 0.2);
+                width: 20%;
+                height: 170px;
+                display: flex;
+                justify-content: center;
+            
+                img{
+                   
+                    width: 65%;
+                    height: 55%;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    align-items: center;
+                    object-fit: contain;
+                }
+            }
+        }
+            
+        }
+   
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .noBorder{
+        
+        border-right: none !important;
+    }
+    .noBorderBottom{
+        border-bottom: none !important;
+    }
+    
+}
+
+.ourServices{
+    display: flex;
+    background: linear-gradient(90deg, #F6EB61 0%, #FFB25B 100%);
+    padding: 120px 190px 120px 190px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .serviceTitle{
+    padding: 0;
+    margin: 0;
+         p{
+        margin: auto;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 50px;
+        color: #101820;
+        margin-bottom: 60px;
+        }
+    }
+    .serviceList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 10px;
+            width: 19%;
+            padding: 30px 30px 26px 30px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 30px rgba(5, 1, 1, 0.08);
+            border-radius: 12px;
+            .serviceLogo{
+                width: 40px;
+                height: 40px;
+                margin-bottom: 14px;
+            }
+            .serviceCardTitle {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 30px;
+                margin-bottom: 14px;
+            }
+            .serviceInfo{
+                width: 100%;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #101820;
+                flex-grow: 0;
+                margin-bottom: 14px;
+            }
+        }
+    }
+}
+
+.yourAgency{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 120px 190px;
+    .yourAgencyText{
+    .titleYourAgency {
+        display: flex;
+        justify-content: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 50px;
+        color: #101820;
+    }
+    p{
+        margin: auto;
+        margin-top: 16px;
+        width: 815px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 30px;
+        text-align: center;
+        color: #101820;
+    }
+    }
+    .agencyList{
+     display: flex;
+    justify-content: space-around;
+    background: #FFFFFF;
+    margin-top: 60px;
+    flex-wrap: wrap;
+       .agencyList1{
+        padding: 20px;
+        width: 27%;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(2, 2, 2, 0.08);
+        border-radius: 12px;
+        img{
+         width: 50px;
+        }
+        h3 {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 36px;
+            margin: 10px 0px;
+            color: #101820;
+        }
+        p {
+            width: 95%;
+            height: 100%;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #101820;
+        }
+        
+        
+    }
+
+
+
+
+    }
+}
