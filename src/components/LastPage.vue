@@ -21,7 +21,7 @@
             <p> Provicy Policy</p>
         </div>
         <div class="Contacts">
-            <h3>Contacts</h3>
+            <router-link to="/contactus">   <h3>Contacts</h3> </router-link>    
             <p><img src="../assets/img/contact img/ci_location.png" alt=""> Melbourne, AU, Level 6, 534 Church Street, Cremorne, VIC 3121</p>
             <p> <img src="../assets/img/contact img/Vector (5).png" alt=""> 1300 818 435</p>
             <p><img src="../assets/img/contact img/fluent_mail-16-filled.png" alt=""> info@mooning.com</p>

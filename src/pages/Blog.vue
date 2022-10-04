@@ -22,10 +22,11 @@
     </div>
    
    </div>
+      
    <div class="clicks">
          <img src="../assets/img/blogImg/Vector.svg" alt="">
          <p>1</p>
-         <p>2</p>
+         <router-link to="/bloginside"> <p>2</p> </router-link> 
          <p>3</p>
          <p>4</p>
          <p>...</p>
@@ -303,7 +304,7 @@ components:{
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         background-clip: text;
-                        text-fill-color: transparent;
+                       
 
                         img{
                             width: 20px;

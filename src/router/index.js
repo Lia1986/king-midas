@@ -8,7 +8,8 @@ import MarketingAutomation from '../pages/MarketingAutomation'
 import CRM from '../pages/CRM'
 import Careers from '../pages/Careers'
 import Blog from '../pages/Blog'
-
+import BlogInside from '../pages/BlogInside'
+import ContactUs from '../pages/ContactUs'
 Vue.use(Router)
 Vue.use(VueMeta)
 
@@ -48,6 +49,16 @@ export default new Router({
       path: '/blog',
       name: 'Blog',
       component: Blog
-    }
+    },
+    {
+      path: '/bloginside',
+      name: 'BlogInside',
+      component: BlogInside
+    },
+    {
+      path: '/contactus',
+      name: 'ContactUs',
+      component: ContactUs
+    },
   ]
 })
