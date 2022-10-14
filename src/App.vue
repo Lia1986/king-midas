@@ -1,27 +1,26 @@
 <template>
   <div id="app">
     <Header />
-    <router-view/>   
+    <router-view />
   </div>
 </template>
 
 <script>
-import Header from './layout/Header.vue'
+import Header from "./layout/Header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
-  data () {
-    return {
-    }
+  data() {
+    return {};
   },
 
   components: {
-    Header, 
+    Header
   }
-}
+};
 </script>
 
 <style lang="scss">
-  @import "./assets/scss/base";
+@import "./assets/scss/base";
 </style>

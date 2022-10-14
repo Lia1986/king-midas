@@ -1,11 +1,15 @@
 <template>
   <div>
     <div class="blogInside">
-
-      <p class="back">
-        <img src="../assets/img/blogInside/mdi-light_arrow-right.svg" alt="" />
-        Back
-      </p>
+      <router-link to="/blog">
+        <p class="back">
+          <img
+            src="../assets/img/blogInside/mdi-light_arrow-right.svg"
+            alt=""
+          />
+          Back
+        </p>
+      </router-link>
       <div class="BlogInsideDisplay">
         <div class="blogInsideInfo">
           <div class="aboutMarketing">
@@ -52,9 +56,8 @@
 </template>
 
 <script>
-  import LastPage from '../components/LastPage.vue';
+import LastPage from "../components/LastPage.vue";
 export default {
-  
   data() {
     return {
       info: [
@@ -154,16 +157,18 @@ export default {
       ]
     };
   },
-  components:{
-   
+  components: {
     LastPage
-}
+  }
 };
 </script>
 
 <style lang="scss">
 .blogInside {
-  padding: 120px 190px;
+  padding: 7% 10%;
+  a {
+    text-decoration: none;
+  }
   .blogInsideInfo {
     display: flex;
     .infoMenu {
@@ -182,11 +187,9 @@ export default {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
       }
       .infoSection {
         div {
-          
           display: flex;
           margin-top: 30px;
           p {
@@ -207,6 +210,7 @@ export default {
   .aboutMarketing {
     width: 80%;
     img {
+      margin: 20px 0px;
       width: 100%;
     }
     h2 {
@@ -220,6 +224,7 @@ export default {
       color: #120804;
     }
     p {
+      margin-bottom: 60px;
       font-family: "Raleway";
       font-style: normal;
       font-weight: 500;
@@ -243,6 +248,7 @@ export default {
     display: flex;
     align-items: center;
     text-align: center;
+    color: #120804;
 
     img {
       width: 24px;
@@ -259,7 +265,132 @@ export default {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 1359px) {
+  .blogInside {
+    padding: 4% 6%;
+    .BlogInsideDisplay {
+      .blogInsideInfo {
+        .aboutMarketing {
+          .infoList {
+            h2 {
+              font-size: 26px;
+              line-height: 35px;
+            }
+            p {
+              font-size: 18px;
+              line-height: 36px;
+            }
+          }
+          .infoMenu {
+            .infoSection {
+              div {
+                p {
+                  font-size: 20px;
+                  line-height: 36px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .blogInside {
+    .BlogInsideDisplay {
+      .blogInsideInfo {
+        .aboutMarketing {
+          .infoList {
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+            h2 {
+              font-size: 18px;
+              line-height: 25px;
+            }
+          }
+        }
+
+        .infoMenu {
+          .infoSection {
+            div {
+              p {
+                font-size: 18px;
+                line-height: 36px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .blogInside {
+    padding: 3% 4%;
+    .BlogInsideDisplay {
+      .blogInsideInfo {
+        .aboutMarketing {
+          .infoList {
+            h2 {
+              font-size: 26px;
+              line-height: 35px;
+            }
+            p {
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+
+        .infoMenu {
+          .infoSection {
+            div {
+              p {
+                font-size: 15px;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 787px) {
+}
+
+@media only screen and (max-width: 595px) {
+  .blogInside {
+    .blogInsideInfo {
+      .infoMenu {
+        display: none;
+      }
+
+      .aboutMarketing {
+        width: 100%;
+        .infoList {
+          padding-right: 0px;
+          border-right: 0px;
+
+          h2 {
+            font-size: 18px;
+            line-height: 21px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
   }
 }
 </style>

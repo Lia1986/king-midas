@@ -108,17 +108,25 @@ export default {
 </script>
 
 <style lang="scss">
+    @font-face {
+font-family: 'Raleway';
+src: url(../assets/img/Raleway/static/Raleway-Regular.ttf);
+}
+@font-face {
+font-family: 'Manrope';
+src: url(../assets/img/Raleway/static/Raleway-Italic.ttf);
+}
 .comparison {
 display: flex;
 justify-content: space-between;
 background-color: #09080E;
-padding: 120px 190px;
+padding: 7% 10%;
     img {
     width: 3%;
     height: 5%;
     }
     .kingMidas {
-     width: 38%;
+     width: 45%;
         img {
         margin-right: 10px;
         width: 32px;
@@ -127,7 +135,7 @@ padding: 120px 190px;
     }
     
     .otherAgency {
-        width: 38%;
+        width: 45%;
         img {
         margin-right: 10px;
         width: 32px;
@@ -141,8 +149,8 @@ padding: 120px 190px;
     color: #FFFFFF;
     }
     p {
-    width: 100%;
-    height: 60px;
+ 
+    padding: 10px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
@@ -154,5 +162,153 @@ padding: 120px 190px;
     color: #FFFFFF;
     }
     
+}
+@media only screen and (max-width: 1359px) {
+   .comparison{
+    padding: 6% 9%;
+    .kingMidas{
+        h1{
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 20px;
+            img{
+            width: 27px;
+            height: 27px;
+        }
+        }
+        
+    }
+    .otherAgency{
+        h1{
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 20px;
+            img{
+            width: 27px;
+            height: 27px;
+        }
+        }
+    }
+   }
+}
+@media only screen and (max-width: 1150px){
+    .comparison{
+        padding: 5% 8%;
+    .kingMidas{
+        h1{
+            margin-bottom: 12px;
+         
+
+        }
+        p{   
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 15px;
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .otherAgency{
+        h1{
+            margin-bottom: 12px;
+         
+
+        }
+        p{   
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 15px;
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+}}
+}
+@media only screen and (max-width: 767px) {
+   .comparison{
+    .kingMidas{
+        h1{
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        p{   
+            font-size: 13px;
+             line-height: 17px;
+             margin-bottom: 7px;
+            img{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    .otherAgency{
+        h1{
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        p{   
+            font-size: 13px;
+             line-height: 17px;
+             margin-bottom: 7px;
+            img{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+   }
+}
+@media only screen and (max-width: 575px) {
+   .comparison{
+    display: block;
+    
+    >img{    
+            width: 12%;
+            margin-left: 43%;
+        }
+    .kingMidas{
+        width: 100%;
+
+        h1{
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        p{   
+            font-size: 13px;
+             line-height: 17px;
+             margin-bottom: 7px;
+            img{
+                width: 18px;
+                height: 18px;
+        }
+        }
+        
+    }
+    .otherAgency{
+       
+        margin-top:32px;
+        width: 100%;
+        h1{
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        p{   
+            font-size: 13px;
+             line-height: 17px;
+             margin-bottom: 7px;
+            img{
+                width: 18px;
+                height: 18px;
+        }
+        }
+    }
+   }
 }
 </style>

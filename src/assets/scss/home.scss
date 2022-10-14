@@ -1,8 +1,10 @@
 .brands{
-    padding: 120px 190px;
+    padding: 7% 10%;
     justify-content: center;
     padding-bottom: 120px;
     background-color: #F5F5F5;
+    .brandsTitle{
+        margin-bottom: 40px;
     h3{
     text-align: center;
     font-family: 'Raleway';
@@ -11,11 +13,12 @@
     font-size: 42px;
     line-height: 50px;
     color: #101820;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     margin-top: 0px;
     img{
-        width: 29.57px;
+        width: 30;
     }
+}
     }
     .list{
         border-bottom: 1px solid rgba(21, 22, 24, 0.2);
@@ -58,7 +61,7 @@
 .ourServices{
     display: flex;
     background: linear-gradient(90deg, #F6EB61 0%, #FFB25B 100%);
-    padding: 120px 190px 120px 190px;
+    padding: 7% 10%;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -123,9 +126,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 120px 190px;
+    padding: 7% 10%;
     .yourAgencyText{
+       
     .titleYourAgency {
+        
         display: flex;
         justify-content: center;
         font-family: 'Raleway';
@@ -138,7 +143,7 @@
     p{
         margin: auto;
         margin-top: 16px;
-        width: 815px;
+       
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 500;
@@ -173,8 +178,7 @@
             color: #101820;
         }
         p {
-            width: 95%;
-            height: 100%;
+            
             font-family: 'Raleway';
             font-style: normal;
             font-weight: 500;
@@ -191,3 +195,7 @@
 
     }
 }
+
+
+
+

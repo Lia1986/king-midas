@@ -10,6 +10,9 @@ import Careers from '../pages/Careers'
 import Blog from '../pages/Blog'
 import BlogInside from '../pages/BlogInside'
 import ContactUs from '../pages/ContactUs'
+import ThankYou from '../pages/ThankYou'
+import Page404mini from '../pages/Page404mini'
+import Page404 from '../pages/Page404'
 Vue.use(Router)
 Vue.use(VueMeta)
 
@@ -59,6 +62,21 @@ export default new Router({
       path: '/contactus',
       name: 'ContactUs',
       component: ContactUs
+    },
+    {
+      path: '/thankyou',
+      name: 'ThankYou',
+      component: ThankYou
+    },
+    {
+      path: '/Page404mini',
+      name: 'Page404mini',
+      component: Page404mini
+    },
+    {
+      path: '/Page404',
+      name: 'Page404',
+      component: Page404
     },
   ]
 })
